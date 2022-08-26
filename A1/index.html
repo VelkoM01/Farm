@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Funkcije.js"></script>
+    <style>
+        body {
+            background-image: url('farma.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+		div {
+		position:relative;
+		top:200px;
+		left:800px;
+		}
+		
+		nav {
+  max-width: 100%;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: 75px 0;
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 20px;
+  font-family: "Roboto";
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+  font-size: 25px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 0, 0, 0.7);
+}
+    </style>
+</head>
+<body>
+<nav>
+<ul>
+  <li>  <a href="index.html">Home</a></li>
+   <li> <a href="instructions.html">Instructions</a></li>
+    <li><a href="author.html">Author</a></li>
+	</ul>
+	</nav>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    
+    <audio id="mySoundClip">
+        <source src="moo.mp3" type="audio/mp3" />
+    </audio>
+    <script type="text/javascript">
+        var mysound = document.getElementById("mySoundClip");
+    </script>
+    <audio id="mySoundClip2">
+        <source src="konj.mp3" type="audio/mp3" />
+    </audio>
+    <script type="text/javascript">
+        var mysound2 = document.getElementById("mySoundClip2");
+    </script>
+    <audio id="mySoundClip3">
+        <source src="macka.mp3" type="audio/mp3" />
+    </audio>
+    <script type="text/javascript">
+        var mysound3 = document.getElementById("mySoundClip3");
+    </script>
+    <audio id="mySoundClip4">
+        <source src="pile.mp3" type="audio/mp3" />
+    </audio>
+    <script type="text/javascript">
+        var mysound4 = document.getElementById("mySoundClip4");
+    </script>
+    <audio id="mySoundClip5">
+        <source src="pas.mp3" type="audio/mp3" />
+    </audio>
+    <script type="text/javascript">
+        var mysound5 = document.getElementById("mySoundClip5");
+    </script>
+
+<div>
+    <img src="konj.png" alt="konj" width="150" height="150" id="konj" onclick="klik1()" onmouseover="mysound2.play()">
+    <img src="krava.png" alt="krava" width="150" height="150" id="krava" onclick="klik2()" onmouseover="mysound.play();">
+    <img src="macka.png" alt="macka" width="60" height="60" id="macka" onclick="klik3()" onmouseover="mysound3.play();">
+    <img src="pile.png" alt="pile" width="40" height="40" id="pile" onclick="klik4()" onmouseover="mysound4.play();">
+    <img src="pas.png" alt="pas" width="70" height="70" id="pas" onclick="klik5()" onmouseover="mysound5.play();">
+</div>
+</body>
+</html>
+
+		
+
